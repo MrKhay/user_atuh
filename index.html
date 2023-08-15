@@ -17,10 +17,11 @@
 
     <title>Create Account Form</title>
   </head>
-  <body>
+
+  <body style="background-image: url('images/img.jpg')">
   
 
-  <div class="content">
+   <div class="content">
     
     <div class="container">
       <div class="row align-items-stretch no-gutters contact-wrap">
@@ -72,6 +73,25 @@
 
 
               <div class="row">
+
+                <div class="col-md-6 form-group mb-5">
+                  <label for="sex" class="col-form-label">Sex *</label>
+                  <select class="form-control" name="sex" id="sex">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6 form-group mb-5">
+                  <label for="" class="col-form-label">Pin Code *</label>
+                  <input type="password" class="form-control" name="pin" id="pin"  placeholder="Your pincode">
+                </div>
+
+              </div>
+
+
+              <div class="row">
                 <div class="col-md-12 form-group mb-5">
                   <label for="message" class="col-form-label">Nationality *</label>
                   <input class="form-control" name="nationality" id="nationality"  placeholder="Your nationality"></input>
@@ -100,19 +120,21 @@
         </div>
         <div class="col-md-6">
           <div class="contact-info h-100" style="background-image: url('images/map.jpg')">
-            <a href="https://www.google.com/maps" target="_blank"></a>
+            <a href="https://www.google.com/maps"  target="_blank"></a>
           </div>
         </div>
       </div>
     </div>
 
-
-     
-   
-
   </div>
-    
-  <label class="text-capitalize text-info p-2 align-text-bottom" >Powered by meta</label>
+
+ <div class="text-center" style="background-image: url('images/meta.png')">
+  <label class="text-capitalize text-white font-weight-bold p-2 align-text-bottom">Powered by meta</label>
+  <div class="contact-info h-100" >
+ </div>
+  <div class="text-center">
+    <a href="mailto:universalyearlydraws1@gmail.com" target="_blank"> more info contact universalyearlydraws1@gmail.com</a>
+  </div>
     
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>

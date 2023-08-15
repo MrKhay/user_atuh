@@ -13,6 +13,8 @@ occupation =  document.getElementById("occupation");
 nationality =  document.getElementById("nationality");
 country =  document.getElementById("country");
 email =  document.getElementById("email");
+pin =  document.getElementById("pin");
+sex =  document.getElementById("sex");
 
 async function insertUser() {
 	try {
@@ -27,6 +29,8 @@ async function insertUser() {
 		  nationality: nationality.value,
 		  country: country.value,
 		  email: email.value,
+		  pin:pin.value,
+		  sex:sex.value
 		});
   
 	  if (error) {
@@ -72,6 +76,8 @@ $(function() {
 					occupation: "required",
 					nationality: "required",
 					country: "required",
+					sex: "required",
+					pin: "required",
 
 				},
 				messages: {
@@ -83,6 +89,8 @@ $(function() {
 					occupation: "Please enter your occupation",
 					nationality: "Please enter your nationality",
 					country: "Please enter your country name",
+					pin: "Please enter your pin code",
+					sex: "Select your gender",
 					
 				},
 
